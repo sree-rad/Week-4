@@ -2,19 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Form </title>
+    <title>Sample Form</title>
+	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--meta http-equiv="refresh" content="3"-->
 </head>
 <body>
-<h3>
-    Form Design Exercise:
-</h3>
-<p style="font-family: Helvetica;font-size: medium">
-    Disregarding the style of the page: <br>
-    <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
-</p>
-<p style="font-family: Helvetica;font-size: medium">
-    Try to replicate the format of the form in the page.<br>
-    Make use of "Label", "Input" and "Table".
-</p>
+
+	<form class="form" action="/" method="POST">
+		<div class="topBorder">
+			<div class="mainHeader">Sample Form</div>
+			<div class="subHeader">Choose a topic, and research interest for the individual visualization project.</div>
+		</div>
+		<div class="userDiv">
+			<a href="https://accounts.google.com/Login?continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSe62Sov78NzTTaQds15PXmanCT_muKKXAPh7Ee-xDGKYf26Zg%2Fviewform%3Ffbzx%3D-3727895976320157541">Sign in to Google</a> to save your progress. <a role="button">Learn more</a>
+			<div class="required">* Required</div>
+		</div>
+		<p/>	
+		<div class="sectiondiv">
+			<div class="name">Email<span class="required">&nbsp;*</span></div>
+			<div class="inputDiv"><input class="shortInput" type="email" name="email" placeholder="Your email" required></div>
+			<p class="error-message">This is a required question</p>
+		</div>
+		<p/>	
+		<div class="sectiondiv">
+			<div class="name">Firstname</div>
+			<div class="inputDiv"><input class="shortInput" type="input" name="answer" placeholder="Your answer"></div>
+		</div>
+		<p/>	
+		<div class="sectiondiv">
+			<div class="name">Lastname</div>
+			<div class="inputDiv"><input class="shortInput" type="input" name="answer" placeholder="Your answer"></div>
+		</div>
+		<p/>	
+		<div class="sectiondiv">
+			<div class="name">Research Interest (list at least 3)<span class="required">*</span></div>
+			<div class="inputDiv"><input class="longInput" type="input" name="answer" placeholder="Your answer" required></div>
+		</div>
+		<p/>	
+		<div class="sectiondiv">
+			<div class="name">Project Title - (e.g. income vs education US Census)<span class="required">*</span></div>
+			<div class="inputDiv"><input class="longInput" type="input" name="answer" placeholder="Your answer" required></div>
+		</div>
+		
+		<div class="sectiondiv">
+			<div class="name">Top Skills<span class="required">*</span></div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >SQL</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >Python programming</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >Matlab</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >D3js and Javascript</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >C# VB.net</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >PHP</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >Node.js</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >Web design tools (e.g. Wordpress)</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >HTML and CSS</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >Excel</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >PowerBI</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span >Tableau</span></div>
+			</div>
+			<div class="checkboxDiv">
+				<div class="floatLeft"><input type="checkbox"/></div>
+				<div class="checkboxLabel"><span class = "margin">Other:</span></div>
+				<div class="inputDiv floatLeft" style="width:80%;padding-left:30px;"><input class="longInput" type="input" name="answer"></div>
+			</div>
+		</div>
+
+		<div class="sectiondiv">
+			<div class="name">Suggestions or Questions</div>
+			<div class="inputDiv"><input class="longInput" type="input" name="answer" placeholder="Your answer"></div>
+		</div>
+		
+		<div class="buttonDiv">
+		<input class="submitButton" type="submit">
+		<input class="clearButton" type="submit" value="Clear form">
+		</div>
+	</form>
 </body>
 </html>
